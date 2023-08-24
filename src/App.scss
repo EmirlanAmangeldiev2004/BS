@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap");
+@import "Global";
+@import "./components/Header/Header.scss";
+@import "./components/Footer/Footer.scss";
+@import "./components/AllBooks/AllBooks.scss";
+
+#detail {
+  .detail {
+    &--card {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 75px;
+      margin: 64px 0;
+      img {
+        width: 300px;
+        height: 450px;
+      }
+      &--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+        width: 53%;
+        // width: 466px;
+        &--name {
+          display: flex;
+          gap: 16px;
+          h1 {
+            width: 300px;
+            color: var(--text-color, #19272e);
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 120%;
+          }
+          &--icon {
+            font-size: 18px;
+            &:hover {
+              color: #818eea;
+              cursor: pointer;
+            }
+          }
+        }
+        h5 {
+          color: var(--text-color, #19272e);
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 140%;
+          margin-top: 8px;
+        }
+        p {
+          width: 75%;
+          margin: 32px 0;
+          color: var(--text-color, #19272e);
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 140%;
+        }
+        h2 {
+          color: var(--main-color, #818eea);
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 26px;
+          letter-spacing: -0.3px;
+          margin-bottom: 32px;
+        }
+        &--btns {
+          display: flex;
+          gap: 16px;
+          &--addBtn {
+            border-radius: 8px;
+            background: var(--main-color, #818eea);
+            color: var(--colors-white, #fff);
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22px;
+            letter-spacing: -0.4px;
+            padding: 14px 134px;
+            cursor: pointer;
+          }
+          &--howMuch {
+            display: flex;
+            width: 100px;
+            padding: 12px 10px;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 8px;
+            border: 1px solid var(--main-color, #818eea);
+            h6 {
+              color: var(--primary, #0d0d0d);
+              text-align: center;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 26px;
+              letter-spacing: -0.3px;
+            }
+            button {
+              // padding-top: 3px;
+              background-color: #fff;
+              font-size: 20px;
+              opacity: 0.5;
+              color: #818eea;
+            }
+          }
+        }
+      }
+    }
+  }
+}

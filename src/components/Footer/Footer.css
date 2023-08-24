@@ -1,0 +1,75 @@
+#footer {
+  background: var(--main-color, #818eea);
+  width: 100%;
+}
+#footer .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 112px 0 64px 0;
+}
+#footer .footer--singIn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#footer .footer--singIn h1 {
+  color: var(--background-color, #fff);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -1.5px;
+}
+#footer .footer--singIn p {
+  color: var(--background-color, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+}
+#footer .footer--singIn form {
+  border-radius: 8px;
+  border: 0.5px solid #fff;
+}
+#footer .footer--singIn form input {
+  border: none;
+  outline: none;
+  padding: 11.5px 0 11.5px 16px;
+  background-color: #818eea;
+  width: 79%;
+  border-radius: 8px;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: #fff;
+}
+#footer .footer--singIn form ::-webkit-input-placeholder {
+  color: #fff;
+}
+#footer .footer--singIn form button {
+  padding: 11.5px 16px 11.5px 16px;
+  background-color: #818eea;
+  border-radius: 8px;
+  color: var(--background-color, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+#footer .footer--texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#footer .footer--texts p {
+  color: var(--background-color, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  opacity: 0.5;
+}
+#footer .footer--texts p:first-child {
+  margin-bottom: 11px;
+  opacity: 1;
+}/*# sourceMappingURL=Footer.css.map */

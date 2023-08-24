@@ -1,0 +1,70 @@
+#new {
+  margin: 112px 0 24px 0;
+}
+#new .new h1 {
+  font-size: 48px;
+  font-weight: 500;
+  text-align: center;
+}
+#new .new .new-blocks {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  justify-content: center;
+}
+#new .new .new-blocks .new-blocks_card1 {
+  margin-top: 90px;
+  width: 200px;
+}
+#new .new .new-blocks .new-blocks_card1 h4 {
+  color: var(--text-color, #19272e);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 8px 0 0 0;
+  text-transform: uppercase;
+}
+#new .new .new-blocks .new-blocks_card1 p {
+  color: var(--text-color, #19272e);
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 4px;
+  line-height: 140%;
+}
+#new .new .new-blocks .new-blocks_card2 {
+  width: 200px;
+}
+#new .new .new-blocks .new-blocks_card2 h4 {
+  color: var(--text-color, #19272e);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 8px 0 0 0;
+  text-transform: uppercase;
+}
+#new .new .new-blocks .new-blocks_card2 p {
+  color: var(--text-color, #19272e);
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 4px;
+  line-height: 140%;
+}
+#new .new .new-blocks .new-blocks_card3 {
+  width: 200px;
+  margin-top: 140px;
+}
+#new .new .new-blocks .new-blocks_card3 h4 {
+  color: var(--text-color, #19272e);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin: 8px 0 0 0;
+}
+#new .new .new-blocks .new-blocks_card3 p {
+  color: var(--text-color, #19272e);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 4px;
+}/*# sourceMappingURL=NewBooks.css.map */

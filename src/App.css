@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans", "sans-serif";
+}
+
+.container {
+  width: 83%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+#header {
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
+#header .header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+#header .header--nav {
+  display: flex;
+}
+#header .header--nav li {
+  list-style: none;
+  color: var(--text-color, #19272e);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+  outline: none;
+  margin-right: 32px;
+}
+#header .header--nav li .click {
+  color: var(--text-color, #19272e);
+  font-weight: 500;
+}
+#header .header--nav li .unclick {
+  color: var(--main-color, #818eea);
+  font-weight: 700;
+}
+#header .header--nav li:hover {
+  color: var(--main-color, #818eea);
+  font-weight: 700;
+}
+#header .header--icons {
+  display: flex;
+  gap: 24px;
+  font-size: 20px;
+}
+#header .header--icons--shop {
+  display: flex;
+  gap: 4px;
+}
+#header .header--icons--shop p {
+  color: var(--text-color, #19272e);
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+}
+
+#footer {
+  background: var(--main-color, #818eea);
+  width: 100%;
+}
+#footer .footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 112px 0 64px 0;
+}
+#footer .footer--singIn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#footer .footer--singIn h1 {
+  color: var(--background-color, #fff);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -1.5px;
+}
+#footer .footer--singIn p {
+  color: var(--background-color, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+}
+#footer .footer--singIn form {
+  border-radius: 8px;
+  border: 0.5px solid #fff;
+}
+#footer .footer--singIn form input {
+  border: none;
+  outline: none;
+  padding: 11.5px 0 11.5px 16px;
+  background-color: #818eea;
+  width: 79%;
+  border-radius: 8px;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  color: #fff;
+}
+#footer .footer--singIn form ::-webkit-input-placeholder {
+  color: #fff;
+}
+#footer .footer--singIn form button {
+  padding: 11.5px 16px 11.5px 16px;
+  background-color: #818eea;
+  border-radius: 8px;
+  color: var(--background-color, #fff);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+#footer .footer--texts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#footer .footer--texts p {
+  color: var(--background-color, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  opacity: 0.5;
+}
+#footer .footer--texts p:first-child {
+  margin-bottom: 11px;
+  opacity: 1;
+}
+
+#allBooks .allBooks h1 {
+  color: var(--text-color, #19272e);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -1.08px;
+  margin: 48px 0 0 0;
+}
+#allBooks .allBooks p {
+  color: var(--text-color, #19272e);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+}
+#allBooks .allBooks--filterBooks {
+  display: flex;
+  margin: 75px 0 0 0;
+  justify-content: space-between;
+}
+#allBooks .allBooks--filterBooks--filter--text {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
+#allBooks .allBooks--filterBooks--filter--text h3 {
+  color: var(--text-color, #19272e);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.55px;
+}
+#allBooks .allBooks--filterBooks--filter--text p {
+  color: var(--main-color, #818eea);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: -0.4px;
+  border-bottom: 1px solid #818eea;
+}
+#allBooks .allBooks--filterBooks--filter h4 {
+  color: var(--text-color, #19272e);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.4px;
+  margin: 24px 0;
+}
+#allBooks .allBooks--filterBooks--filter--form--gender {
+  display: flex;
+  flex-direction: column;
+}
+#allBooks .allBooks--filterBooks--filter--form--gender--first {
+  padding: 12px 0;
+}
+#allBooks .allBooks--filterBooks--filter--form--gender--first label {
+  color: var(--text-color, #19272e);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  position: relative;
+}
+#allBooks .allBooks--filterBooks--filter--form--gender--first label input {
+  margin-right: 16px;
+}
+#allBooks .allBooks--filterBooks--filter--sort {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#allBooks .allBooks--filterBooks--filter--sort--sortBooks button {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.3px;
+  color: #818eea;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--main-color, #818eea);
+  display: flex;
+  padding: 6px 12px;
+}
+#allBooks .allBooks--filterBooks--filter--sort--sortBooks button span {
+  color: var(--main-color, #818eea);
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 5px 0 12px;
+}
+#allBooks .allBooks--filterBooks--filter--sort--cards {
+  display: flex;
+  gap: 34.67px;
+  row-gap: 0;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin: 64px 0 48px 0;
+  width: 904px;
+}
+#allBooks .allBooks--filterBooks--filter--sort--cards--card {
+  margin: 0 0 40px 0;
+  width: 200px;
+}
+
+#detail .detail--card {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 75px;
+  margin: 64px 0;
+}
+#detail .detail--card img {
+  width: 300px;
+  height: 450px;
+}
+#detail .detail--card--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  width: 53%;
+}
+#detail .detail--card--text--name {
+  display: flex;
+  gap: 16px;
+}
+#detail .detail--card--text--name h1 {
+  width: 300px;
+  color: var(--text-color, #19272e);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+}
+#detail .detail--card--text--name--icon {
+  font-size: 18px;
+}
+#detail .detail--card--text--name--icon:hover {
+  color: #818eea;
+  cursor: pointer;
+}
+#detail .detail--card--text h5 {
+  color: var(--text-color, #19272e);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 8px;
+}
+#detail .detail--card--text p {
+  width: 75%;
+  margin: 32px 0;
+  color: var(--text-color, #19272e);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+#detail .detail--card--text h2 {
+  color: var(--main-color, #818eea);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.3px;
+  margin-bottom: 32px;
+}
+#detail .detail--card--text--btns {
+  display: flex;
+  gap: 16px;
+}
+#detail .detail--card--text--btns--addBtn {
+  border-radius: 8px;
+  background: var(--main-color, #818eea);
+  color: var(--colors-white, #fff);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.4px;
+  padding: 14px 134px;
+  cursor: pointer;
+}
+#detail .detail--card--text--btns--howMuch {
+  display: flex;
+  width: 100px;
+  padding: 12px 10px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--main-color, #818eea);
+}
+#detail .detail--card--text--btns--howMuch h6 {
+  color: var(--primary, #0d0d0d);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.3px;
+}
+#detail .detail--card--text--btns--howMuch button {
+  background-color: #fff;
+  font-size: 20px;
+  opacity: 0.5;
+  color: #818eea;
+}/*# sourceMappingURL=App.css.map */

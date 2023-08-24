@@ -1,0 +1,29 @@
+#books {
+  margin: 112px 0 0 0;
+}
+#books .books .books--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#books .books .books--title h1 {
+  font-family: Public Sans, sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+#books .books .books--title p {
+  font-family: Public Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(129, 142, 234);
+  margin-top: 10px;
+}
+#books .cards {
+  display: flex;
+  overflow-x: scroll;
+  margin: 64px 0 0 9.8%;
+  gap: 40px;
+}
+#books .cards::-webkit-scrollbar {
+  display: none;
+}/*# sourceMappingURL=Books.css.map */

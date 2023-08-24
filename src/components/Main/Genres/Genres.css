@@ -1,0 +1,43 @@
+#genres {
+  margin: 112px 0 24px 0;
+}
+#genres .genres .genres--title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#genres .genres .genres--title h1 {
+  font-family: Public Sans, sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+}
+#genres .genres .genres--title p {
+  font-family: Public Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(129, 142, 234);
+}
+#genres .genres .genres--list {
+  margin: 60px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#genres .genres .genres--list .genres--list_card {
+  width: 148px;
+  height: 194px;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, #e1e1e1, #e1e1e1), linear-gradient(0deg, #f5f5f5, #f5f5f5);
+}
+#genres .genres .genres--list h4 {
+  font-family: Public Sans, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 24px;
+}/*# sourceMappingURL=Genres.css.map */
