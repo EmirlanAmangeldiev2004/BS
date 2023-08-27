@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const ProductCard = ({ el, setCount }) => {
   return (
     <div>
-      <NavLink to={"/product/details"}>
+      <NavLink to={"/product/:id"}>
         <div
           onClick={() => setCount(el.id)}
           className="allBooks--filterBooks--filter--sort--cards--card"
