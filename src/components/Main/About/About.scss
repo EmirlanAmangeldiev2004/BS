@@ -11,10 +11,10 @@
     }
     .about-block {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
+      
       p {
-        margin: 0 50px 0 0;
         width: 510px;
         height: 183px;
         font-family: Public Sans, sans-serif;
@@ -22,7 +22,7 @@
         font-weight: 400;
         line-height: 28px;
         letter-spacing: 0em;
-        text-align: left;
+        
       }
     }
   }

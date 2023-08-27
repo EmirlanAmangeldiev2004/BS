@@ -10,7 +10,7 @@
     justify-content: space-between;
     height: 80px;
     align-items: center;
-    &--nav {
+    &--nav{
       display: flex;
       align-items: center;
       gap: 32px;
@@ -22,7 +22,7 @@
         letter-spacing: -0.6px;
         outline: none;
       }
-      h2 {
+      h2{
         color: var(--main-color, #818eea);
         font-size: 20px;
         font-weight: 700;
@@ -30,16 +30,50 @@
     }
     &--icons {
       display: flex;
-      gap: 24px;
-      font-size: 20px;
+      align-items: center;
+      gap: 40px;
+      &__block{
+        position: absolute;
+        border-radius: 20px;
+        left: 1058px;
+        top: 61px;
+        width: 210px;
+        height: 260px;
+        font-size: 13px;
+        background-color: rgb(211, 226, 214);
+      }
+      &--search{
+        &--bisearch{
+          position: relative;
+          margin-right: -27px;
+          transition: .5s;
+          cursor: pointer;
+          font-size: 24px;
+          margin-bottom: -10px;
+        }
+        &--bisearch:hover{
+          color: #818eea;
+        }
+        input{
+          // background: rgb(220, 220, 220);
+          background: #DDD;
+          outline: none;
+          height: 30px;
+          border: none;
+          border-radius:8px;
+          transition: 1s;
+          
+        }
+      }
       &--shop {
         display: flex;
-        gap: 4px;
-        p {
-          color: var(--text-color, #19272e);
-          font-size: 17px;
-          font-weight: 400;
-          letter-spacing: -0.6px;
+        align-items: center;
+        gap: 4px; 
+        .shop{  
+          font-size: 23px;
+          p{
+            font-size: 17px;
+          }
         }
       }
     }
