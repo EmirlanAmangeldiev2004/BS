@@ -1,3 +1,6 @@
+#allBooks {
+  margin: 128px 0 0 0;
+}
 #allBooks .allBooks h1 {
   color: var(--text-color, #19272e);
   font-size: 36px;
@@ -17,11 +20,13 @@
   display: flex;
   margin: 75px 0 0 0;
   justify-content: space-between;
+  gap: 32px;
 }
 #allBooks .allBooks--filterBooks--filter--text {
   display: flex;
   align-items: flex-end;
   gap: 20px;
+  width: 184px;
 }
 #allBooks .allBooks--filterBooks--filter--text h3 {
   color: var(--text-color, #19272e);
@@ -30,13 +35,14 @@
   line-height: 30px;
   letter-spacing: -0.55px;
 }
-#allBooks .allBooks--filterBooks--filter--text p {
+#allBooks .allBooks--filterBooks--filter--text a {
   color: var(--main-color, #818eea);
   font-size: 14px;
   font-weight: 400;
   line-height: 15px;
   letter-spacing: -0.4px;
   border-bottom: 1px solid #818eea;
+  cursor: pointer;
 }
 #allBooks .allBooks--filterBooks--filter h4 {
   color: var(--text-color, #19272e);
@@ -51,7 +57,7 @@
   flex-direction: column;
 }
 #allBooks .allBooks--filterBooks--filter--form--gender--first {
-  padding: 12px 0;
+  padding: 11px 0;
 }
 #allBooks .allBooks--filterBooks--filter--form--gender--first label {
   color: var(--text-color, #19272e);
@@ -91,9 +97,12 @@
   gap: 34.67px;
   row-gap: 0;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: end;
   margin: 64px 0 48px 0;
   width: 904px;
+}
+#allBooks .allBooks--filterBooks--filter--sort--cards a {
+  color: var(--text-color, #19272e);
 }
 #allBooks .allBooks--filterBooks--filter--sort--cards--card {
   margin: 0 0 40px 0;

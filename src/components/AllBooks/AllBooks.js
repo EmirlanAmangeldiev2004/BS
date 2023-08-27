@@ -14,7 +14,7 @@ const AllBooks = ({ setCount }) => {
             <div className="allBooks--filterBooks--filter">
               <div className="allBooks--filterBooks--filter--text">
                 <h3>Filter</h3>
-                <p>Clear filters</p>
+                <a href="">Clear filters</a>
               </div>
               <h4>Genres</h4>
               <form className="allBooks--filterBooks--filter--form">
@@ -98,7 +98,7 @@ const AllBooks = ({ setCount }) => {
               <div className="allBooks--filterBooks--filter--sort--sortBooks">
                 <button>
                   Sort By <span>Popular</span>
-                  <img src={dropdown} alt="" />
+                  <img src={dropdown} alt="down" />
                 </button>
               </div>
               <div className="allBooks--filterBooks--filter--sort--cards">

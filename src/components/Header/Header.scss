@@ -21,8 +21,11 @@
         font-weight: 500;
         letter-spacing: -0.6px;
         outline: none;
+        &:hover {
+          color: var(--main-color, #818eea);
+        }
       }
-      h2 {
+      h3 {
         color: var(--main-color, #818eea);
         font-size: 20px;
         font-weight: 700;
@@ -32,9 +35,11 @@
       display: flex;
       gap: 24px;
       font-size: 20px;
-      &--shop {
+      &--shop,
+      a {
         display: flex;
         gap: 4px;
+        color: #000;
         p {
           color: var(--text-color, #19272e);
           font-size: 17px;

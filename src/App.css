@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: 83%;
+  width: 81%;
   margin: 0 auto;
 }
 
@@ -26,6 +26,11 @@ button {
 
 #header {
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 #header .header {
   display: flex;
@@ -35,6 +40,8 @@ button {
 }
 #header .header--nav {
   display: flex;
+  align-items: center;
+  gap: 32px;
 }
 #header .header--nav li {
   list-style: none;
@@ -43,18 +50,13 @@ button {
   font-weight: 500;
   letter-spacing: -0.6px;
   outline: none;
-  margin-right: 32px;
-}
-#header .header--nav li .click {
-  color: var(--text-color, #19272e);
-  font-weight: 500;
-}
-#header .header--nav li .unclick {
-  color: var(--main-color, #818eea);
-  font-weight: 700;
 }
 #header .header--nav li:hover {
   color: var(--main-color, #818eea);
+}
+#header .header--nav h3 {
+  color: var(--main-color, #818eea);
+  font-size: 20px;
   font-weight: 700;
 }
 #header .header--icons {
@@ -149,6 +151,9 @@ button {
   opacity: 1;
 }
 
+#allBooks {
+  margin: 128px 0 0 0;
+}
 #allBooks .allBooks h1 {
   color: var(--text-color, #19272e);
   font-size: 36px;
@@ -181,13 +186,14 @@ button {
   line-height: 30px;
   letter-spacing: -0.55px;
 }
-#allBooks .allBooks--filterBooks--filter--text p {
+#allBooks .allBooks--filterBooks--filter--text a {
   color: var(--main-color, #818eea);
   font-size: 14px;
   font-weight: 400;
   line-height: 15px;
   letter-spacing: -0.4px;
   border-bottom: 1px solid #818eea;
+  cursor: pointer;
 }
 #allBooks .allBooks--filterBooks--filter h4 {
   color: var(--text-color, #19272e);
@@ -246,15 +252,21 @@ button {
   margin: 64px 0 48px 0;
   width: 904px;
 }
+#allBooks .allBooks--filterBooks--filter--sort--cards a {
+  color: var(--text-color, #19272e);
+}
 #allBooks .allBooks--filterBooks--filter--sort--cards--card {
   margin: 0 0 40px 0;
   width: 200px;
 }
 
+#detail {
+  margin: 144px 0 0 0;
+}
 #detail .detail--card {
   display: flex;
   justify-content: space-between;
-  padding: 0 75px;
+  padding: 0 0 0 90px;
   margin: 64px 0;
 }
 #detail .detail--card img {

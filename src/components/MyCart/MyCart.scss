@@ -1,0 +1,89 @@
+#myCart {
+  margin: 112px 0 65px 0;
+  .myCart {
+    h1 {
+      color: var(--text-color, #19272e);
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 44px;
+      letter-spacing: -1.5px;
+    }
+    &--text {
+      display: flex;
+      gap: 5px;
+      margin-bottom: 16px;
+      &--p {
+        color: var(--text-color, #19272e);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.2px;
+      }
+      &--containue {
+        color: var(--main-color, #818eea);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: -0.2px;
+        cursor: pointer;
+      }
+    }
+    &--box {
+      display: flex;
+      &--basket {
+        display: flex;
+        flex-direction: column;
+        width: 58%;
+        &--card {
+          display: flex;
+          gap: 32px;
+          margin: 24px 0 0 0;
+          padding: 0 0 16px 0;
+          border-bottom: 1.4px solid rgba(25, 39, 46, 0.3);
+          &--text {
+            width: 60%;
+            padding: 6px 5px;
+            h2 {
+              color: var(--text-color, #19272e);
+              font-size: 19px;
+              font-weight: 700;
+              line-height: 120%;
+            }
+            &--by {
+              color: var(--text-color, #19272e);
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 130%;
+              margin-top: 16px;
+            }
+            &--quantity {
+              color: var(--text-color, #19272e);
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 140%;
+              margin-top: 115px;
+            }
+            h3 {
+              color: var(--main-color, #818eea);
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 140%;
+              margin-top: 15px;
+            }
+          }
+          button {
+            color: #f00;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+            letter-spacing: -0.4px;
+            background-color: #fff;
+            padding: 3px 0;
+            border-bottom: 1.3px solid #ff0000;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}

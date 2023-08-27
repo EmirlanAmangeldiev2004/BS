@@ -2,34 +2,36 @@ import React from "react";
 import { BiSearch, BiShoppingBag } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ cart }) => {
   return (
     <header id="header">
       <div className="container">
         <div className="header">
           <nav className="header--nav">
             <NavLink to={"/"}>
-              <h2>Bookshop</h2>
+              <h3 onClick={() => window.scroll(0, 0)}>Bookshop</h3>
             </NavLink>
-            <NavLink>
-              <li>Categories</li>
+            <NavLink to={"/"}>
+              <li onClick={() => window.scroll(0, 560)}>Categories</li>
             </NavLink>
-            <NavLink>
-              <li>Recent</li>
+            <NavLink to={"/"}>
+              <li onClick={() => window.scroll(0, 1080)}>Recent</li>
             </NavLink>
-            <NavLink to={"/books"}>
-              <li>Books</li>
+            <NavLink to={"/"}>
+              <li onClick={() => window.scroll(0, 1750)}>Books</li>
             </NavLink>
-            <NavLink>
-              <li>About Us</li>
+            <NavLink to={"/"}>
+              <li onClick={() => window.scroll(0, 2450)}>About Us</li>
             </NavLink>
           </nav>
           <div className="header--icons">
             <BiSearch />
-            <div className="header--icons--shop">
-              <BiShoppingBag />
-              <p>0</p>
-            </div>
+            <NavLink to={"/myCart"}>
+              <div className="header--icons--shop">
+                <BiShoppingBag />
+                <p>{cart}</p>
+              </div>
+            </NavLink>
           </div>
         </div>
       </div>
