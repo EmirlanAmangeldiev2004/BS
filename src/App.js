@@ -57,7 +57,10 @@ const App = () => {
         <Route path="/product/details" element={<BooksCard count={count} />} />
         <Route path="/" element={<Main />} />
         <Route path="/books" element={<AllBooks setCount={setCount} />} />
-        <Route path="/product/details" element={<ProductDetail count={count} />}/>
+        <Route
+          path="/product/details"
+          element={<ProductDetail count={count} />}
+        />
         <Route path="/allBooks" element={<AllBooks setCount={setCount} />} />
         <Route
           path="/myCart"

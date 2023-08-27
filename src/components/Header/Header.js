@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BiSearch, BiShoppingBag } from "react-icons/bi";
+import { NavLink } from "react-router-dom";
 import { NavLink, useNavigate } from "react-router-dom";
 import { books } from "../FaceBack/books";
 
@@ -13,6 +14,7 @@ const Header = () => {
 return el.name.toLowerCase().includes(value.toLowerCase())
   })
 
+const Header = ({ cart }) => {
   return (
     <header id="header">
       <div className="container">
@@ -35,6 +37,9 @@ return el.name.toLowerCase().includes(value.toLowerCase())
             </NavLink>
           </nav>
           <div className="header--icons">
+            <div className="header--icons--search">
+              <BiSearch className="header--icons--search--bisearch" />
+            </div>
             <BiSearch />
             <NavLink to={"/myCart"}>
               <div className="header--icons--shop">
