@@ -7,6 +7,9 @@ import product6 from "../img/Product Image6.jpg";
 import product7 from "../img/Product Image7.jpg";
 import product8 from "../img/Product Image8.jpg";
 import product9 from "../img/Product Image9.jpg";
+import product10 from "../Main/NewBooks/book1.svg";
+import product11 from "../Main/NewBooks/book2.svg";
+import product12 from "../Main/NewBooks/book3.svg";
 
 export const books = [
   {
@@ -16,6 +19,8 @@ export const books = [
     descr:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: product,
+    price: 98,
+    quantity: 0,
   },
   {
     id: 2,
@@ -24,6 +29,8 @@ export const books = [
     descr:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: product2,
+    price: 99,
+    quantity: 1,
   },
   {
     id: 3,
@@ -32,6 +39,8 @@ export const books = [
     descr:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: product3,
+    price: 99,
+    quantity: 1,
   },
   {
     id: 4,
@@ -40,6 +49,8 @@ export const books = [
     descr:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: product4,
+    price: 99,
+    quantity: 1,
   },
   {
     id: 5,
@@ -48,6 +59,8 @@ export const books = [
     descr:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: product5,
+    price: 99,
+    quantity: 1,
   },
   {
     id: 6,
@@ -56,6 +69,8 @@ export const books = [
     descr:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: product6,
+    price: 99,
+    quantity: 1,
   },
   {
     id: 7,
@@ -64,6 +79,8 @@ export const books = [
     descr:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: product7,
+    price: 99,
+    quantity: 1,
   },
   {
     id: 8,
@@ -72,6 +89,8 @@ export const books = [
     descr:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: product8,
+    price: 99,
+    quantity: 1,
   },
   {
     id: 9,
@@ -80,5 +99,40 @@ export const books = [
     descr:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: product9,
+    price: 99,
+    quantity: 1,
+  },
+  {
+    id: 10,
+    name: "THE CLIMATE BOOK: THE FACTS AND THE SOLUTIONS",
+    by: "by Greta Thunberg",
+    descr:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: product10,
+    price: 99,
+    new: 1,
+    quantity: 1,
+  },
+  {
+    id: 11,
+    name: "REST IS RESISTANCE: A MANIFESTO",
+    by: "by Tricia Hersey",
+    descr:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: product11,
+    price: 99,
+    new: 1,
+    quantity: 1,
+  },
+  {
+    id: 12,
+    name: "A NEW NAME: SEPTOLOGY VI-VII",
+    by: "by Jon Fosse",
+    descr:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    img: product12,
+    price: 99,
+    new: 1,
+    quantity: 1,
   },
 ];

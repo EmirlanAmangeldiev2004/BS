@@ -6,12 +6,10 @@
       justify-content: space-between;
       align-items: center;
       h1 {
-        font-family: Public Sans, sans-serif;
         font-size: 48px;
         font-weight: 500;
       }
       p {
-        font-family: Public Sans, sans-serif;
         font-size: 18px;
         font-weight: 500;
         color: rgba(129, 142, 234, 1);
@@ -26,6 +24,9 @@
     gap: 40px;
     &::-webkit-scrollbar {
       display: none;
+    }
+    a {
+      color: var(--text-color, #19272e);
     }
   }
 }

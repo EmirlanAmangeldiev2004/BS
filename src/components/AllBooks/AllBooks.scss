@@ -1,4 +1,5 @@
 #allBooks {
+  margin: 128px 0 0 0;
   .allBooks {
     h1 {
       color: var(--text-color, #19272e);
@@ -19,11 +20,13 @@
       display: flex;
       margin: 75px 0 0 0;
       justify-content: space-between;
+      gap: 32px;
       &--filter {
         &--text {
           display: flex;
           align-items: flex-end;
           gap: 20px;
+          width: 184px;
           h3 {
             color: var(--text-color, #19272e);
             font-size: 22px;
@@ -31,13 +34,14 @@
             line-height: 30px;
             letter-spacing: -0.55px;
           }
-          p {
+          a {
             color: var(--main-color, #818eea);
             font-size: 14px;
             font-weight: 400;
             line-height: 15px;
             letter-spacing: -0.4px;
             border-bottom: 1px solid #818eea;
+            cursor: pointer;
           }
         }
         h4 {
@@ -53,7 +57,7 @@
             display: flex;
             flex-direction: column;
             &--first {
-              padding: 12px 0;
+              padding: 11px 0;
               label {
                 color: var(--text-color, #19272e);
                 font-size: 16px;
@@ -96,9 +100,12 @@
             gap: 34.67px;
             row-gap: 0;
             flex-wrap: wrap;
-            justify-content: start;
+            justify-content: end;
             margin: 64px 0 48px 0;
             width: 904px;
+            a {
+              color: var(--text-color, #19272e);
+            }
             &--card {
               margin: 0 0 40px 0;
               width: 200px;

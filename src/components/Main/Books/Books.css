@@ -7,12 +7,10 @@
   align-items: center;
 }
 #books .books .books--title h1 {
-  font-family: Public Sans, sans-serif;
   font-size: 48px;
   font-weight: 500;
 }
 #books .books .books--title p {
-  font-family: Public Sans, sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: rgb(129, 142, 234);
@@ -26,4 +24,7 @@
 }
 #books .cards::-webkit-scrollbar {
   display: none;
+}
+#books .cards a {
+  color: var(--text-color, #19272e);
 }/*# sourceMappingURL=Books.css.map */

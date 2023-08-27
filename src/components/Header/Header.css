@@ -25,7 +25,10 @@
   letter-spacing: -0.6px;
   outline: none;
 }
-#header .header--nav h2 {
+#header .header--nav li:hover {
+  color: var(--main-color, #818eea);
+}
+#header .header--nav h3 {
   color: var(--main-color, #818eea);
   font-size: 20px;
   font-weight: 700;
@@ -35,11 +38,14 @@
   gap: 24px;
   font-size: 20px;
 }
-#header .header--icons--shop {
+#header .header--icons--shop,
+#header .header--icons a {
   display: flex;
   gap: 4px;
+  color: #000;
 }
-#header .header--icons--shop p {
+#header .header--icons--shop p,
+#header .header--icons a p {
   color: var(--text-color, #19272e);
   font-size: 17px;
   font-weight: 400;
