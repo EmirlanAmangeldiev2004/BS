@@ -2,8 +2,9 @@ import React from "react";
 import "./Books.scss";
 import { books } from "../../FaceBack/books";
 import { NavLink } from "react-router-dom";
+import BooksCard from "./BooksCard";
 
-const Books = () => {
+const Books = ({ setCount }) => {
   return (
     <div id="books">
       <div className="container">
@@ -18,11 +19,7 @@ const Books = () => {
       </div>
       <div className="cards">
         {books.map((el) => (
-          <div className="books--cards--card">
-            <img src={el.img} alt="" />
-            <h3>{el.name}</h3>
-            <p>{el.by}</p>
-          </div>
+          <BooksCard setCount={setCount} el={el} />
         ))}
       </div>
     </div>
