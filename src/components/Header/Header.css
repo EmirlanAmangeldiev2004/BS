@@ -29,6 +29,7 @@
   color: var(--main-color, #818eea);
 }
 #header .header--nav h2 {
+#header .header--nav h3 {
   color: var(--main-color, #818eea);
   font-size: 20px;
   font-weight: 700;
@@ -74,12 +75,15 @@
 }
 #header .header--icons--shop--shop,
 #header .header--icons--shop a {
+#header .header--icons--shop,
+#header .header--icons a {
   display: flex;
   gap: 4px;
   color: #000;
-}
 #header .header--icons--shop--shop p,
 #header .header--icons--shop a p {
+#header .header--icons--shop p,
+#header .header--icons a p {
   color: var(--text-color, #19272e);
   font-size: 17px;
   font-weight: 400;

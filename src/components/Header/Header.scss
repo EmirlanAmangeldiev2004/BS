@@ -26,6 +26,8 @@
         }
       }
       h2 {
+      h3 {
+      h2{
         color: var(--main-color, #818eea);
         font-size: 20px;
         font-weight: 700;
@@ -33,6 +35,18 @@
     }
     &--icons {
       display: flex;
+      gap: 24px;
+      font-size: 20px;
+      &--shop,
+      a {
+        display: flex;
+        gap: 4px;
+        color: #000;
+        p {
+          color: var(--text-color, #19272e);
+          font-size: 17px;
+          font-weight: 400;
+          letter-spacing: -0.6px;
       align-items: center;
       gap: 40px;
       &__block {
