@@ -53,6 +53,7 @@ const MyCart = ({ readData, product, deleteData, setCart, cart }) => {
   return (
     <section id="myCart">
       <div className="container">
+        <h1>jhgvf</h1>
         <div className="myCart">
           <h1>Your cart</h1>
           <div className="myCart--text">
