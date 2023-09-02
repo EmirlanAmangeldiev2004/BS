@@ -1,4 +1,3 @@
-import React from "react";
 import dropdown from "../img/dropdown.svg";
 import { books } from "./../FaceBack/books";
 import ProductCard from "./../ProductDetail/ProductCard";

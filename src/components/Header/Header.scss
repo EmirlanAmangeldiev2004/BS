@@ -3,7 +3,7 @@
   background-color: #fff;
   width: 100%;
   position: fixed;
-  top: 0;
+  top: -2px;
   z-index: 10;
   .header {
     display: flex;
@@ -25,7 +25,7 @@
           color: var(--main-color, #818eea);
         }
       }
-      h2 {
+      h3 {
         color: var(--main-color, #818eea);
         font-size: 20px;
         font-weight: 700;
@@ -34,17 +34,7 @@
     &--icons {
       display: flex;
       align-items: center;
-      gap: 40px;
-      &__block {
-        position: absolute;
-        border-radius: 20px;
-        left: 1058px;
-        top: 61px;
-        width: 210px;
-        height: 260px;
-        font-size: 13px;
-        background-color: rgb(211, 226, 214);
-      }
+      gap: 35px;
       &--search {
         &--bisearch {
           position: relative;
@@ -58,75 +48,56 @@
           color: #818eea;
         }
         input {
-          // background: rgb(220, 220, 220);
-          background: #ddd;
+          background: rgb(247 246 246);
           outline: none;
-          height: 30px;
+          height: 35px;
           border: none;
           border-radius: 8px;
           transition: 1s;
+          &:hover {
+            border-radius: 8px;
+            border: 0.8px solid #5609bb;
+            outline: 5px solid rgba(192, 143, 255, 0.3);
+          }
+        }
+      }
+      &__block {
+        position: absolute;
+        margin-top: 293px;
+        width: 280px;
+        height: 250px;
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 15px 5px 5px 10px;
+        &__title {
+          display: flex;
+          align-items: center;
+          font-size: 15px;
         }
       }
       &--shop {
         display: flex;
-        gap: 24px;
-        font-size: 20px;
-        &--shop,
-        a {
-          display: flex;
-          gap: 4px;
-          color: #000;
+        align-items: center;
+        gap: 4px;
+        color: rgb(255, 1, 1);
+        .shop {
+          color: #19272e;
+          font-size: 23px;
           p {
-            color: var(--text-color, #19272e);
             font-size: 17px;
-            font-weight: 400;
-            letter-spacing: -0.6px;
-            align-items: center;
-            gap: 40px;
-            &__block {
-              position: absolute;
-              border-radius: 20px;
-              left: 1058px;
-              top: 61px;
-              width: 210px;
-              height: 260px;
-              font-size: 13px;
-              background-color: rgb(211, 226, 214);
-            }
-            &--search {
-              &--bisearch {
-                position: relative;
-                margin-right: -27px;
-                transition: 0.5s;
-                cursor: pointer;
-                font-size: 24px;
-                margin-bottom: -10px;
-              }
-              &--bisearch:hover {
-                color: #818eea;
-              }
-              input {
-                // background: rgb(220, 220, 220);
-                background: #ddd;
-                outline: none;
-                height: 30px;
-                border: none;
-                border-radius: 8px;
-                transition: 1s;
-              }
-            }
-            &--shop {
-              display: flex;
-              align-items: center;
-              gap: 4px;
-              .shop {
-                font-size: 23px;
-                p {
-                  font-size: 17px;
-                }
-              }
-            }
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  #header {
+    .header {
+      &--nav {
+        li {
+          display: none;
         }
       }
     }

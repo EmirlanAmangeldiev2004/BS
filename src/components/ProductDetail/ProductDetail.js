@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 // import { NavLink } from "react-router-dom";
-import { books } from "./../FaceBack/books";
+import { books, quan, setQuan } from "./../FaceBack/books";
 import { FiHeart } from "react-icons/fi";
 import { BiMinus, BiShareAlt } from "react-icons/bi";
 import { BsPlus } from "react-icons/bs";
+import { useNavigate } from "react-router-dom";
 // import { useEffect } from "react";
 
 const ProductDetail = ({ count, setCart, cart, createData, product }) => {
-  const { name, img, by, descr, price, id } = books[count - 1];
-  const [add, setAdd] = useState(0);
+  const { name, img, by, descr, price, id, quantity } = books[count - 1];
   const [kol, setKol] = useState(1);
-
+  const navigate = useNavigate();
   function pushData() {
     let data = JSON.parse(localStorage.getItem("book")) || [];
 
@@ -22,7 +22,7 @@ const ProductDetail = ({ count, setCart, cart, createData, product }) => {
         ...newFilteredData,
         {
           ...newCurrentData,
-          price: newCurrentData.price + price,
+          price: newCurrentData.price + pri,
           quantity: newCurrentData.quantity + kol,
         },
       ];
@@ -42,6 +42,8 @@ const ProductDetail = ({ count, setCart, cart, createData, product }) => {
     }
   }
 
+  const [pri, setPri] = useState(price);
+
   return (
     <section id="detail">
       <div className="container">
@@ -56,12 +58,11 @@ const ProductDetail = ({ count, setCart, cart, createData, product }) => {
               </div>
               <h5>{by}</h5>
               <p>{descr}</p>
-              <h2>{`$${price}`}</h2>
+              <h2>${pri}</h2>
               <div className="detail--card--text--btns">
                 <button
                   onClick={() => {
-                    pushData();
-                    setAdd(1);
+                    pushData() || navigate("/allBooks" || window.scroll(0, 0));
                   }}
                   className="detail--card--text--btns--addBtn"
                 >
@@ -70,14 +71,17 @@ const ProductDetail = ({ count, setCart, cart, createData, product }) => {
 
                 <div className="detail--card--text--btns--howMuch">
                   <button
-                    onClick={() => setKol(kol > 1 ? kol - 1 : 1)}
+                    onClick={() =>
+                      setKol(kol > 1 ? kol - 1 : 1) ||
+                      setPri(price > price ? pri - price : price)
+                    }
                     className="detail--card--text--btns--howMuch--plus"
                   >
                     <BiMinus />
                   </button>
                   <h6>{kol}</h6>
                   <button
-                    onClick={() => setKol(kol + 1)}
+                    onClick={() => setKol(kol + 1) || setPri(pri + price)}
                     className="detail--card--text--btns--howMuch--minus"
                   >
                     <BsPlus />

@@ -1,8 +1,17 @@
 import React, { useState } from "react";
 import { BiSearch, BiShoppingBag } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
+import { books } from "../FaceBack/books";
 
 const Header = ({ cart }) => {
+  const [search, setSearch] = useState(true);
+  const [value, setValue] = useState("");
+  const [card, setCard] = useState("");
+
+  const filter1 = books.filter((el) => {
+    return el.name.toLowerCase().includes(value.toLowerCase());
+  });
+
   return (
     <header id="header">
       <div className="container">
@@ -26,11 +35,42 @@ const Header = ({ cart }) => {
           </nav>
           <div className="header--icons">
             <div className="header--icons--search">
-              <BiSearch className="header--icons--search--bisearch" />
+              <BiSearch
+                className="header--icons--search--bisearch"
+                onClick={() => {
+                  setSearch(!search);
+                  setCard(!card);
+                }}
+              />
+              <NavLink to={"/allBooks"} onClick={() => setSearch(false)}>
+                <input
+                  onChange={(e) => setValue(e.target.value)}
+                  style={{
+                    width: search ? "0" : "180px",
+                    paddingLeft: search ? "0" : "35px",
+                  }}
+                  type="text"
+                />
+              </NavLink>
             </div>
+            {/* <div
+              className="header--icons__block"
+              style={{
+                display: card ? "block" : "none",
+              }}
+            >
+              {filter1.map((el, idx) => (
+                <NavLink to={"/product/details"}>
+                  <div className="header--icons__block__title">
+                    <h6>{idx + 1}.</h6>
+                    <h5>{el.name}</h5>
+                  </div>
+                </NavLink>
+              ))}
+            </div> */}
             <NavLink to={"/myCart"}>
               <div className="header--icons--shop">
-                <BiShoppingBag />
+                <BiShoppingBag className="shop" />
                 <p>{cart}</p>
               </div>
             </NavLink>
