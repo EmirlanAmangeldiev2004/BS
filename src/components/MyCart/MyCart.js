@@ -24,7 +24,6 @@ const MyCart = ({ readData, product, deleteData, setCart, cart }) => {
   const [menu, setMenu] = useState(false);
   const [menu1, setMenu1] = useState(false);
   const [menuClass, setMenuClass] = useState("menu hidden");
-  const [menuClass1, setMenuClass1] = useState("menu1 hidden1");
 
   function updateArrow() {
     !menu
