@@ -37,4 +37,119 @@
   line-height: 50px;
   text-align: left;
   margin-left: 73px;
+}
+
+@media (max-width: 1024px) {
+  #hero {
+    height: 330px;
+  }
+}
+@media (max-width: 768px) {
+  #hero {
+    width: 162%;
+    height: 500px;
+  }
+  #hero .bc {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 576px) {
+  #hero {
+    width: 205%;
+  }
+  #hero .bc {
+    position: absolute;
+    z-index: -1;
+    width: 207.7vw;
+    height: 107vw;
+  }
+  #hero .hero p {
+    width: 556px;
+    height: 22px;
+    font-size: 24px;
+    margin-left: -10px;
+  }
+}
+@media (max-width: 450px) {
+  #hero {
+    width: 225%;
+  }
+  #hero .bc {
+    position: absolute;
+    z-index: -1;
+    width: 225.7vw;
+    height: 111vw;
+  }
+  #hero .hero h1 {
+    width: 417px;
+    height: 85px;
+    font-family: Public Sans, sans-serif;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 85px;
+    text-align: left;
+    color: white;
+  }
+  #hero .hero p {
+    width: 556px;
+    height: 20px;
+    font-family: Public Sans, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: left;
+    margin-left: 58px;
+  }
+}
+@media (max-width: 400px) {
+  #hero {
+    width: 243%;
+  }
+  #hero .bc {
+    position: absolute;
+    z-index: -1;
+    width: 242.7vw;
+    height: 126vw;
+  }
+}
+@media (max-width: 375px) {
+  #hero {
+    width: 253%;
+  }
+  #hero .bc {
+    position: absolute;
+    z-index: -1;
+    width: 253.7vw;
+    height: 137vw;
+  }
+}
+@media (max-width: 320px) {
+  #hero {
+    width: 253%;
+    height: 393px;
+  }
+  #hero .bc {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 130vw;
+  }
+  #hero .hero h1 {
+    width: 422px;
+    height: 85px;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 85px;
+  }
+  #hero .hero p {
+    width: 556px;
+    height: 43px;
+    font-family: Public Sans, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+    margin-left: 90px;
+  }
 }/*# sourceMappingURL=Hero.css.map */
