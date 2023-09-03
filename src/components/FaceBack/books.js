@@ -20,7 +20,7 @@ export const books = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: product,
     price: 98,
-    quantity: 0,
+    quantity: 1,
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export const books = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     img: product2,
     price: 99,
-    quantity: 1,
+    quantity: 2,
   },
   {
     id: 3,

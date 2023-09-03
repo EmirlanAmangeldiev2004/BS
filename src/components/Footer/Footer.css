@@ -7,6 +7,9 @@
   justify-content: space-between;
   padding: 112px 0 64px 0;
 }
+#footer .footer--lorems {
+  display: flex;
+}
 #footer .footer--singIn {
   display: flex;
   flex-direction: column;
@@ -29,6 +32,7 @@
 #footer .footer--singIn form {
   border-radius: 8px;
   border: 0.5px solid #fff;
+  display: flex;
 }
 #footer .footer--singIn form input {
   border: none;
@@ -55,6 +59,7 @@
   font-size: 14px;
   font-weight: 700;
   letter-spacing: -0.3px;
+  width: 100px;
 }
 #footer .footer--texts {
   display: flex;
