@@ -26,6 +26,9 @@
         }
       }
       h3 {
+      h2 {
+      h3 {
+      h2{
         color: var(--main-color, #818eea);
         font-size: 20px;
         font-weight: 700;
@@ -33,8 +36,31 @@
     }
     &--icons {
       display: flex;
+      gap: 24px;
+      font-size: 20px;
+      &--shop,
+      a {
+        display: flex;
+        gap: 4px;
+        color: #000;
+        p {
+          color: var(--text-color, #19272e);
+          font-size: 17px;
+          font-weight: 400;
+          letter-spacing: -0.6px;
       align-items: center;
       gap: 35px;
+      gap: 40px;
+      &__block {
+        position: absolute;
+        border-radius: 20px;
+        left: 1058px;
+        top: 61px;
+        width: 210px;
+        height: 260px;
+        font-size: 13px;
+        background-color: rgb(211, 226, 214);
+      }
       &--search {
         &--bisearch {
           position: relative;
@@ -49,6 +75,7 @@
         }
         input {
           background: rgb(247 246 246);
+          background: #ddd;
           outline: none;
           height: 35px;
           border: none;
@@ -84,7 +111,62 @@
           color: #19272e;
           font-size: 23px;
           p {
+        gap: 24px;
+        font-size: 20px;
+        &--shop,
+        a {
+          display: flex;
+          gap: 4px;
+          color: #000;
+          p {
+            color: var(--text-color, #19272e);
             font-size: 17px;
+            font-weight: 400;
+            letter-spacing: -0.6px;
+            align-items: center;
+            gap: 40px;
+            &__block {
+              position: absolute;
+              border-radius: 20px;
+              left: 1058px;
+              top: 61px;
+              width: 210px;
+              height: 260px;
+              font-size: 13px;
+              background-color: rgb(211, 226, 214);
+            }
+            &--search {
+              &--bisearch {
+                position: relative;
+                margin-right: -27px;
+                transition: 0.5s;
+                cursor: pointer;
+                font-size: 24px;
+                margin-bottom: -10px;
+              }
+              &--bisearch:hover {
+                color: #818eea;
+              }
+              input {
+                background: #ddd;
+                outline: none;
+                height: 30px;
+                border: none;
+                border-radius: 8px;
+                transition: 1s;
+              }
+            }
+            &--shop {
+              display: flex;
+              align-items: center;
+              gap: 4px;
+              .shop {
+                font-size: 23px;
+                p {
+                  font-size: 17px;
+                }
+              }
+            }
           }
         }
       }

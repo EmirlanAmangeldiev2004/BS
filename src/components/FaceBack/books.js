@@ -21,6 +21,7 @@ export const books = [
     img: product,
     price: 98,
     quantity: 1,
+    quantity: 0,
   },
   {
     id: 2,
@@ -31,6 +32,7 @@ export const books = [
     img: product2,
     price: 99,
     quantity: 2,
+    quantity: 1,
   },
   {
     id: 3,

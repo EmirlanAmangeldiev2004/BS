@@ -35,8 +35,6 @@ const App = () => {
     setCart(newData.length);
   }
 
-  console.log(cart);
-
   return (
     <>
       <Header cart={cart} />

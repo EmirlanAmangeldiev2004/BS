@@ -16,7 +16,6 @@
         justify-content: center;
         text-align: start;
         width: 53%;
-        // width: 466px;
         &--name {
           display: flex;
           gap: 16px;
@@ -74,6 +73,8 @@
             padding: 14px 0;
             cursor: pointer;
             width: 62%;
+            padding: 14px 134px;
+            cursor: pointer;
           }
           &--howMuch {
             display: flex;

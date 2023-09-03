@@ -4,6 +4,11 @@ import { NavLink } from "react-router-dom";
 import { books } from "../FaceBack/books";
 
 const Header = ({ cart }) => {
+import { NavLink, useNavigate } from "react-router-dom";
+import { books } from "../FaceBack/books";
+
+const Header = ({ cart }) => {
+const Header = () => {
   const [search, setSearch] = useState(true);
   const [value, setValue] = useState("");
   const [card, setCard] = useState("");
@@ -11,7 +16,10 @@ const Header = ({ cart }) => {
   const filter1 = books.filter((el) => {
     return el.name.toLowerCase().includes(value.toLowerCase());
   });
+return el.name.toLowerCase().includes(value.toLowerCase())
+  })
 
+const Header = ({ cart }) => {
   return (
     <header id="header">
       <div className="container">
@@ -45,6 +53,33 @@ const Header = ({ cart }) => {
               <NavLink to={"/allBooks"} onClick={() => setSearch(false)}>
                 <input
                   onChange={(e) => setValue(e.target.value)}
+              <BiSearch className="header--icons--search--bisearch" />
+            </div>
+            <BiSearch />
+            <NavLink to={"/myCart"}>
+              <div className="header--icons--shop">
+                <BiShoppingBag />
+                <p>{cart}</p>
+              </div>
+            </NavLink>
+               <div className="header--icons--search">
+                   <BiSearch 
+                      className="header--icons--search--bisearch"
+                      onClick={()=>{
+                         setSearch(!search);
+                         setCard(!card);
+                      }}/>
+                       <input
+                       onChange={(e) => setValue(e.target.value)}
+                            style={{    
+                                    width: search ? '0' : '180px',
+                                    paddingLeft:search ? "0" : "35px",
+                                   }}
+                            type="text"
+                        />      
+                </div>  
+                 <div
+                  className="header--icons__block"
                   style={{
                     width: search ? "0" : "180px",
                     paddingLeft: search ? "0" : "35px",

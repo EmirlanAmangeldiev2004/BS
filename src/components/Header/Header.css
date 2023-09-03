@@ -37,6 +37,17 @@
   display: flex;
   align-items: center;
   gap: 35px;
+  gap: 40px;
+}
+#header .header--icons__block {
+  position: absolute;
+  border-radius: 20px;
+  left: 1058px;
+  top: 61px;
+  width: 210px;
+  height: 260px;
+  font-size: 13px;
+  background-color: rgb(211, 226, 214);
 }
 #header .header--icons--search--bisearch {
   position: relative;
@@ -53,6 +64,9 @@
   background: rgb(247, 246, 246);
   outline: none;
   height: 35px;
+  background: #ddd;
+  outline: none;
+  height: 30px;
   border: none;
   border-radius: 8px;
   transition: 1s;
@@ -75,8 +89,13 @@
   display: flex;
   align-items: center;
   font-size: 15px;
-}
 #header .header--icons--shop {
+  display: flex;
+  gap: 24px;
+  font-size: 20px;
+}
+#header .header--icons--shop,
+#header .header--icons a {
   display: flex;
   align-items: center;
   gap: 4px;
@@ -94,4 +113,60 @@
   #header .header--nav li {
     display: none;
   }
+  color: #000;
+#header .header--icons--shop p,
+#header .header--icons a p {
+  color: var(--text-color, #19272e);
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+  align-items: center;
+  gap: 40px;
+}
+#header .header--icons--shop--shop p__block,
+#header .header--icons--shop a p__block {
+  position: absolute;
+  border-radius: 20px;
+  left: 1058px;
+  top: 61px;
+  width: 210px;
+  height: 260px;
+  font-size: 13px;
+  background-color: rgb(211, 226, 214);
+}
+#header .header--icons--shop--shop p--search--bisearch,
+#header .header--icons--shop a p--search--bisearch {
+  position: relative;
+  margin-right: -27px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 24px;
+  margin-bottom: -10px;
+}
+#header .header--icons--shop--shop p--search--bisearch:hover,
+#header .header--icons--shop a p--search--bisearch:hover {
+  color: #818eea;
+}
+#header .header--icons--shop--shop p--search input,
+#header .header--icons--shop a p--search input {
+  background: #ddd;
+  outline: none;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  transition: 1s;
+}
+#header .header--icons--shop--shop p--shop,
+#header .header--icons--shop a p--shop {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+#header .header--icons--shop--shop p--shop .shop,
+#header .header--icons--shop a p--shop .shop {
+  font-size: 23px;
+}
+#header .header--icons--shop--shop p--shop .shop p,
+#header .header--icons--shop a p--shop .shop p {
+  font-size: 17px;
 }/*# sourceMappingURL=Header.css.map */

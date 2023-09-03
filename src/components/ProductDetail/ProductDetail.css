@@ -76,6 +76,8 @@
   padding: 14px 0;
   cursor: pointer;
   width: 62%;
+  padding: 14px 134px;
+  cursor: pointer;
 }
 #detail .detail--card--text--btns--howMuch {
   display: flex;
